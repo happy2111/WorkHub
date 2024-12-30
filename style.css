@@ -44,7 +44,7 @@ body {
 }
 @media (max-width: 767px) {
   .title {
-    font-size: 1.5em;
+    font-size: 2em;
     img {
       height: 38px;
     }
@@ -141,8 +141,42 @@ body {
 }
 .navbar__signUp:hover {
   transform: scale(1.1);
-  /* background-color: var(--white);
+
+}
+/* ***************************************** */
+
+.navbar__logIn2 {
+  width: 100px;
+  height: 45px;
+  border: 1px solid var(--black);
+  border-radius: 42px;
+  background-color: var(--white);
+  transition: var(--tran);
   a {
     color: var(--black);
-  } */
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+.navbar__logIn2:hover {
+  background-color: var(--white);
+  transform: scale(1.1);
+}
+.navbar__signUp2 {
+  margin-left: 24px;
+  width: 100px;
+  height: 45px;
+  border: 1px solid var(--black);
+  border-radius: 42px;
+  background-color: var(--black);
+  transition: var(--tran);
+  a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+.navbar__signUp2:hover {
+  transform: scale(1.1);
+
 }

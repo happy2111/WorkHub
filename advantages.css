@@ -92,6 +92,7 @@
     ul {
       justify-content: space-evenly;
       height: 430px;
+      gap: 0px;
       overflow-y: hidden;
       li {
         img {

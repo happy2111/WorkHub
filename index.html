@@ -75,6 +75,7 @@
         <button class="navbar__logIn"><a href="#">Log In</a></button>
         <button class="navbar__signUp"><a href="#">Sign Up</a></button>
         <div
+          style="height: 100vh;"
           class="offcanvas offcanvas-end text-bg-dark"
           tabindex="-1"
           id="offcanvasDarkNavbar"
@@ -120,6 +121,10 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">FAQ</a>
               </li>
+              <div style="display: flex; justify-content: end; margin: calc(100% - 100px) 0 0 0;">
+                <button class="navbar__logIn2"><a href="#">Log In</a></button>
+                <button class="navbar__signUp2"><a href="#">Sign Up</a></button>
+              </div>
             </ul>
           </div>
         </div>
@@ -355,7 +360,13 @@
         </div>
 
         <div class="video-container">
-          <video id="myVideo" height="100%" width="100%" muted poster="./assets/prev.png">
+          <video
+            id="myVideo"
+            height="100%"
+            width="100%"
+            muted
+            poster="./assets/prev.png"
+          >
             <source src="./assets/video.mp4" type="video/mp4" />
             <source src="./assets/movie.ogg" type="video/ogg" />
             Brauzeringiz video tegini qo'llab-quвvватламайди.
