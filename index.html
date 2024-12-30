@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="features.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./advantages.css" />
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light sticky-top">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="#">WorkHub</a>
+        <button
+          style="
+            border: none;
+            background-color: var(--black);
+            border-radius: 17px;
+          "
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#fff"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <ul
+          style="flex-direction: row; gap: 3rem"
+          class="main__nav__list navbar-nav justify-content-center flex-grow-1 pe-3"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Asosiy sahifa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Biz haqimizda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Asosiy sahifa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Xizmatlar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Narxlar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Aloqa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">FAQ</a>
+          </li>
+        </ul>
+        <button class="navbar__logIn"><a href="#">Log In</a></button>
+        <button class="navbar__signUp"><a href="#">Sign Up</a></button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              WorkHub
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Asosiy sahifa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Asosiy sahifa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Xizmatlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Narxlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Aloqa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="hero">
+        <div class="container">
+          <div class="hero__left">
+            <h1>WorkHub Central – Samarali va innovatsion!</h1>
+            <p>
+              Cowork’ga xush kelibsiz – bu yerda innovatsiya va hamkorlik
+              unumdorlik markazida uchrashadi! 🚀 Salohiyatingizni oching,
+              ijodiy fikrlashni ilhomlantiradigan va aloqalarni rivojlantirishga
+              mo‘ljallangan zamonaviy coworking maydonlarimizdan foydalaning.
+            </p>
+            <a href="#" class="btn">O'rningizni egallang</a>
+          </div>
+          <div class="hero__right">
+            <div><img src="./assets/Image.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="features">
+      <div class="container">
+        <h1 class="title">
+          Nima uchun
+          <span><img src="./assets/title.png" alt="" /></span> WorkHub?
+        </h1>
+        <ul>
+          <li>
+            <article>
+              <svg
+                width="46"
+                height="36"
+                viewBox="0 0 46 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40.5203 15.7031C40.6175 16.4648 40.6663 17.232 40.6666 17.9999C40.6694 21.3633 39.7291 24.66 37.9526 27.5158C36.176 30.3716 33.6344 32.6721 30.6162 34.1561C27.598 35.6401 24.2241 36.2482 20.8778 35.9113C17.5314 35.5743 14.3465 34.3059 11.6847 32.2499C16.4078 31.0949 21.9635 28.7006 27.1422 25.7249C32.6622 22.5543 37.3216 19.0237 40.5203 15.7031ZM44.6247 5.37745C43.1903 2.90432 39.4047 2.34745 33.656 3.7537C30.9945 1.69577 27.8092 0.425526 24.462 0.0872558C21.1148 -0.251014 17.7397 0.356252 14.7203 1.84007C11.701 3.32389 9.15824 5.62478 7.38104 8.48135C5.60384 11.3379 4.66341 14.6357 4.66659 17.9999C4.66682 18.7716 4.71567 19.5425 4.81284 20.3081C-0.379038 25.6874 -0.304038 28.8749 0.710337 30.6224C1.66659 32.2799 3.66159 32.9999 6.28659 32.9999C8.10913 32.9622 9.92092 32.7105 11.6847 32.2499C10.7176 31.5023 9.82811 30.6593 9.02971 29.7337C5.78784 30.2737 3.77971 29.9212 3.30534 29.1168C3.03159 28.6462 3.18346 27.7593 3.72159 26.6793C4.25367 25.6678 4.90043 24.721 5.64909 23.8574C5.64997 23.8519 5.64997 23.8462 5.64909 23.8406V23.8556C6.39321 26.0086 7.53839 28.0012 9.02409 29.7281C12.9503 29.0737 18.6785 27.1199 25.6422 23.1187C30.9166 20.0981 36.5416 15.8756 39.6897 12.1537C38.9484 9.99768 37.803 8.00272 36.3147 6.27557L36.2903 6.24745C36.2903 6.25682 36.3072 6.26432 36.3147 6.27557C38.9791 5.83495 41.4466 5.8687 42.0335 6.88307C42.206 7.17744 42.221 7.61807 42.0616 8.19557C41.7447 9.37869 40.901 10.7324 39.6935 12.1574C40.0905 13.3092 40.3688 14.4985 40.5241 15.7068C42.8678 13.2693 44.4278 10.9537 44.9585 8.97182C45.3222 7.59557 45.2116 6.38807 44.6247 5.37745Z"
+                  fill="#1D1E1C"
+                />
+              </svg>
+              <h3>Ilhomlantiruvchi Muhit</h3>
+              <p>
+                WorkHub zamonaviy, ijodiy fikrlashni qo'llab-quvvatlaydi va
+                yangi g'oyalarni tez amalga oshirishda yordam beradi.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <svg
+                width="48"
+                height="28"
+                viewBox="0 0 48 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26.3335 4.9998C26.3335 4.60197 26.4916 4.22044 26.7729 3.93914C27.0542 3.65783 27.4357 3.4998 27.8335 3.4998H45.8335C46.2313 3.4998 46.6129 3.65783 46.8942 3.93914C47.1755 4.22044 47.3335 4.60197 47.3335 4.9998C47.3335 5.39762 47.1755 5.77915 46.8942 6.06046C46.6129 6.34176 46.2313 6.4998 45.8335 6.4998H27.8335C27.4357 6.4998 27.0542 6.34176 26.7729 6.06046C26.4916 5.77915 26.3335 5.39762 26.3335 4.9998ZM45.8335 12.4998H27.8335C27.4357 12.4998 27.0542 12.6578 26.7729 12.9391C26.4916 13.2204 26.3335 13.602 26.3335 13.9998C26.3335 14.3976 26.4916 14.7792 26.7729 15.0605C27.0542 15.3418 27.4357 15.4998 27.8335 15.4998H45.8335C46.2313 15.4998 46.6129 15.3418 46.8942 15.0605C47.1755 14.7792 47.3335 14.3976 47.3335 13.9998C47.3335 13.602 47.1755 13.2204 46.8942 12.9391C46.6129 12.6578 46.2313 12.4998 45.8335 12.4998ZM45.8335 21.4998H32.3335C31.9357 21.4998 31.5542 21.6578 31.2729 21.9391C30.9916 22.2204 30.8335 22.602 30.8335 22.9998C30.8335 23.3976 30.9916 23.7792 31.2729 24.0605C31.5542 24.3418 31.9357 24.4998 32.3335 24.4998H45.8335C46.2313 24.4998 46.6129 24.3418 46.8942 24.0605C47.1755 23.7792 47.3335 23.3976 47.3335 22.9998C47.3335 22.602 47.1755 22.2204 46.8942 21.9391C46.6129 21.6578 46.2313 21.4998 45.8335 21.4998ZM19.8254 16.6248C21.3141 15.4782 22.4065 13.8943 22.9496 12.0954C23.4926 10.2965 23.4589 8.37271 22.8532 6.5939C22.2476 4.81508 21.1004 3.27045 19.5725 2.17662C18.0446 1.08279 16.2126 0.494629 14.3335 0.494629C12.4544 0.494629 10.6225 1.08279 9.09456 2.17662C7.56665 3.27045 6.41943 4.81508 5.81379 6.5939C5.20816 8.37271 5.17448 10.2965 5.71749 12.0954C6.2605 13.8943 7.35295 15.4782 8.84164 16.6248C4.97539 18.2617 1.92852 21.556 0.880395 25.6248C0.823147 25.8465 0.817423 26.0784 0.86366 26.3027C0.909897 26.5269 1.00687 26.7377 1.14714 26.9187C1.28741 27.0997 1.46726 27.2461 1.67291 27.3469C1.87855 27.4476 2.10453 27.4999 2.33352 27.4998H26.3335C26.5625 27.4999 26.7885 27.4476 26.9941 27.3469C27.1998 27.2461 27.3796 27.0997 27.5199 26.9187C27.6602 26.7377 27.7571 26.5269 27.8034 26.3027C27.8496 26.0784 27.8439 25.8465 27.7866 25.6248C26.7385 21.5542 23.6916 18.2598 19.8254 16.6248Z"
+                  fill="#1D1E1C"
+                />
+              </svg>
+              <h3>Moslashuvchan Rejalar</h3>
+              <p>
+                Boshqa mutaxassislar bilan ishlash va yangi hamkorliklar
+                o'rnatish imkoniyatlarini taqdim etadi.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <svg
+                width="42"
+                height="30"
+                viewBox="0 0 42 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M39 0H3C2.20435 0 1.44129 0.31607 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V27C0 27.7956 0.31607 28.5587 0.87868 29.1213C1.44129 29.6839 2.20435 30 3 30H39C39.7957 30 40.5587 29.6839 41.1213 29.1213C41.6839 28.5587 42 27.7956 42 27V3C42 2.20435 41.6839 1.44129 41.1213 0.87868C40.5587 0.31607 39.7957 0 39 0ZM22.5 24H19.5C19.1022 24 18.7206 23.842 18.4393 23.5607C18.158 23.2794 18 22.8978 18 22.5C18 22.1022 18.158 21.7206 18.4393 21.4393C18.7206 21.158 19.1022 21 19.5 21H22.5C22.8978 21 23.2794 21.158 23.5607 21.4393C23.842 21.7206 24 22.1022 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24ZM34.5 24H28.5C28.1022 24 27.7206 23.842 27.4393 23.5607C27.158 23.2794 27 22.8978 27 22.5C27 22.1022 27.158 21.7206 27.4393 21.4393C27.7206 21.158 28.1022 21 28.5 21H34.5C34.8978 21 35.2794 21.158 35.5607 21.4393C35.842 21.7206 36 22.1022 36 22.5C36 22.8978 35.842 23.2794 35.5607 23.5607C35.2794 23.842 34.8978 24 34.5 24ZM3 7.5V3H39V7.5H3Z"
+                  fill="#1D1E1C"
+                />
+              </svg>
+              <h3>Hamkorlik Imkoniyatlari</h3>
+              <p>
+                Har bir foydalanuvchining ehtiyojiga mos keladigan a'zolik
+                rejalarini taklif etamiz.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <div class="container">
+        <h1 class="title">
+          Bizning
+          <span><img src="./assets/title2.png" alt="" /></span> Afzalliklarimiz
+        </h1>
+        <ul id="adv_list">
+          <li>
+            <span>
+              <img src="./assets/i1.png" alt="icon" />
+            </span>
+            <h3>Cheksiz Internet</h3>
+            <p>
+              Cheksiz yuqori tezlikdagi internet kovorking markazi ko'payadi
+              Sizning samaradorligingiz. 150 Mb/s dan ortiq tezlik.
+            </p>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/i2.png" alt="icon" />
+            </span>
+            <h3>Bepul Qahva va Ichimliklar:</h3>
+            <p>Har bir filialda kovorking hududida mavjud</p>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/i3.png" alt="icon" />
+            </span>
+            <h3>Mavjudligi 24/7</h3>
+            <p>
+              Kecha-kunduz imkoniyat xizmatlardan foydalaning kovorking maydoni
+            </p>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/i4.png" alt="icon" />
+            </span>
+            <h3>Smart Office</h3>
+            <p>
+              Shaxsiy foydalanishga tayyor ofis foydalanish. Butun bo'ylab
+              infratuzilma saytlar - sizning utilizatsiya qilish. Moslashuvchan
+              ijara shartnomalari va tez belgilanish
+            </p>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/i5.png" alt="icon" />
+            </span>
+            <h3>Hot Desk</h3>
+            <p>
+              Ajoyibdan tashqari jihozlangan joy, siz siz ishlaydigan birini
+              olasiz atmosfera, shuningdek bog'lash imkoniyati foydali aloqalar.
+            </p>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/i6.png" alt="icon" />
+            </span>
+            <h3>Muzokara xonalari</h3>
+            <p>
+              Yig'ilish xonalari bilan jihozlangan majlis xonalari,
+              veb-seminarlar va muhim masalalar.
+            </p>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/i7.png" alt="icon" />
+            </span>
+            <h3>Oshxona</h3>
+            <p>
+              To'liq jihozlangan zarur maishiy texnika bilan jihozlangan oshxona
+              maishiy texnika, bepul choy/ qahva / gazaklar
+            </p>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/i8.png" alt="icon" />
+            </span>
+            <h3>Qulaylik</h3>
+            <p>
+              bilan qulay yashash joylari almashtirish imkoniyati kun davomida
+            </p>
+          </li>
+        </ul>
+
+        <button id="close" class="btn" onclick="toggleClose()">
+          <p>Ko'proq</p>
+          <div>
+            <svg
+              width="11"
+              height="7"
+              viewBox="0 0 11 7"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.534489 1.10448C0.722019 0.917012 0.976329 0.811692 1.24149 0.811692C1.50665 0.811692 1.76096 0.917012 1.94849 1.10448L5.24146 4.3975L8.53446 1.10448C8.62676 1.00897 8.73706 0.932792 8.85906 0.880382C8.98106 0.827972 9.11236 0.800382 9.24506 0.799232C9.37786 0.798082 9.50956 0.823381 9.63246 0.873661C9.75536 0.923941 9.86696 0.998192 9.96086 1.09209C10.0548 1.18598 10.1291 1.29763 10.1794 1.42053C10.2296 1.54342 10.2549 1.6751 10.2538 1.80788C10.2526 1.9407 10.225 2.0719 10.1726 2.1939C10.1202 2.3159 10.044 2.4262 9.94846 2.5185L5.94846 6.5185C5.76096 6.706 5.50666 6.8113 5.24146 6.8113C4.97636 6.8113 4.72206 6.706 4.53446 6.5185L0.534489 2.5185C0.347019 2.331 0.241699 2.0766 0.241699 1.8115C0.241699 1.54632 0.347019 1.29201 0.534489 1.10448Z"
+                fill="#1D1E1C"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div
+          class="texts"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <p style="text-align: center">BIZ HAQIMIZDA</p>
+          <h1 class="title" style="max-width: 1000px">
+            Coworkingni bizning ob'ektivimiz orqali
+            <span><img src="./assets/title.png" alt="" /></span>kashf eting
+          </h1>
+          <p
+            style="
+              text-align: center;
+              max-width: 780px;
+              text-wrap: pretty;
+              margin-top: 40px;
+            "
+          >
+            Bizning dinamik makonimizga qadam qo'yishdan oldin Coworkning
+            mohiyatini his eting. Bizning immersiv video-sayohatimiz sizga
+            Cowork tajribasini belgilaydigan jo'shqin atmosfera, zamonaviy
+            jihozlar va hamkorlik energiyasini ko'zdan kechirish imkonini
+            beradi.
+          </p>
+        </div>
+
+        <div class="video-container">
+          <video id="myVideo" height="100%" width="100%" muted poster="./assets/prev.png">
+            <source src="./assets/video.mp4" type="video/mp4" />
+            <source src="./assets/movie.ogg" type="video/ogg" />
+            Brauzeringiz video tegini qo'llab-quвvватламайди.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

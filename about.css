@@ -1,0 +1,29 @@
+#about {
+  margin-top: 200px;
+  .video-container {
+    margin-top: 80px;
+    /* width: 1312px; */
+    /* height: 700px; */
+  }
+}
+@media (max-width: 767px) {
+  
+  #about {
+    margin-top: 100px;
+    p {
+      margin: 20px 0 !important;
+    }
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  #about {
+    margin-top: 100px;
+    h1 {
+      padding: 0 40px;
+    }
+    p {
+      padding: 0 40px;
+      margin: 20px 0 !important;
+    }
+  }
+}
