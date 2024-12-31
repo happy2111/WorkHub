@@ -87,11 +87,12 @@
       justify-content: center;
     }
     ul.active {
-      height: 100%;
+      max-height: 1000px;
     }
     ul {
       justify-content: space-evenly;
-      height: 430px;
+      max-height: 430px;
+      transition: max-height .3s ease;
       gap: 0px;
       overflow-y: hidden;
       li {

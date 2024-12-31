@@ -1,5 +1,9 @@
+@media (max-width: 2000px)  {
+  .hero {
+    height: calc(100vh - 80px);
+  }
+}
 .hero {
-  height: calc(100vh - 80px);
   color: var(--black);
   display: flex;
   align-items: center;
@@ -18,12 +22,11 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .hero {
     height: 100%;
   }
-  .hero > .container { 
+  .hero > .container {
     flex-direction: column;
   }
   .hero__left {
@@ -38,7 +41,6 @@
     p {
       text-align: center;
     }
-    
   }
   .hero__right {
     display: flex;
@@ -49,14 +51,12 @@
       width: 100%;
     }
   }
-  
 }
 @media (max-width: 1024px) and (min-width: 768px) {
   .hero {
     height: 60vh;
   }
   .hero > .container {
-
   }
   .hero__left {
     h1 {
@@ -69,4 +69,3 @@
     }
   }
 }
-

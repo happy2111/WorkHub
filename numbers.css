@@ -57,7 +57,7 @@
   #numbers {
     margin-top: 100px;
     .container {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
   .num__left {

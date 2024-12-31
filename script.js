@@ -14,3 +14,12 @@ video.addEventListener("click", () => {
     video.pause(); // Пауза
   }
 });
+
+
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active")
+  })
+})

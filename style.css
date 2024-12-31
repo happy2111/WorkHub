@@ -21,6 +21,7 @@ ul, li {
 body {
   font-family: Poppins;
 }
+
 .container {
   max-width: 1312px;
 }
@@ -51,6 +52,9 @@ body {
       height: 38px;
     }
   }
+}
+.offcanvas-backdrop.fade.show {
+  background-color: var(--black-hover);
 }
 .navbar-toggler {
   display: none;
@@ -182,3 +186,4 @@ body {
   transform: scale(1.1);
 
 }
+
