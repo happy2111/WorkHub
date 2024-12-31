@@ -7,8 +7,10 @@
   --sky-blue: #A6E8F6;
   --shiny-pink: #FCBEDC;
   --prime: #b9f04c;
+  --almost-orange: #FBC899;
 }
 *, p {
+  /* border: 1px solid red; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -71,12 +73,12 @@ body {
 .offcanvas {
   background-color: var(--black) !important;
   .nav-link {
-    color: var(--white);
+    color: var(--white) !important;
     font-size: 2em;
     transition: var(--tran);
   }
   .nav-link:hover {
-    color: var(--prime);
+    color: var(--prime) !important;
   }
   .nav-link:active,
   .nav-link.active {
