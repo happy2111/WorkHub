@@ -15,11 +15,29 @@ video.addEventListener("click", () => {
   }
 });
 
-
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
-    faq.classList.toggle("active")
-  })
-})
+    faq.classList.toggle("active");
+  });
+});
+
+
+const link_closer = document.querySelectorAll(".nav-link");
+const offcanvas = document.getElementById("offcanvasDarkNavbar");
+const body = document.body
+
+link_closer.forEach((i) => {
+  i.addEventListener("click", () => {
+    offcanvas.classList.remove("show")
+    // offcanvas.setAttribute("data-bs-backdrop", "false");
+  });
+});
+
+if (offcanvas.classList.contains("show")) {
+  body.classList.toggle("active")
+}else {
+  body.classList.toggle("active");
+  body.style.padding = "0px !important";
+}

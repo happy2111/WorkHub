@@ -1,5 +1,10 @@
+@media (max-width: 2000px)  and (min-width: 767px){
+  #faqs {
+    height: calc(100vh - 80px);
+  }
+}
 #faqs {
-  margin-top: 200px;
+  padding-top: 150px;
   .container {
     display: flex;
     justify-content: space-between;
@@ -45,10 +50,15 @@
       margin-left: auto;
       width: 2rem;
       height: 2rem;
+      transition: transform var(--tran) ease;
     }
   }
   .faq.active .answer {
     max-height: 300px;
+    animation: fade 0.5s ease-in-out;
+  }
+  .faq.active img {
+    transform: rotate(180deg);
   }
   .answer {
     max-height: 0;
@@ -60,7 +70,7 @@
 
 @media (max-width: 767px) {
   #faqs {
-    margin-top: 100px;
+    padding-top: 100px;
     .container {
       display: flex;
       flex-direction: column;
@@ -82,5 +92,15 @@
       margin-top: 3rem;
       width: 100%;
     }
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

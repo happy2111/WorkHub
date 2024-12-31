@@ -1,4 +1,6 @@
 #advantages {
+  padding-top: 100px;
+
   #close.rotate {
     div {
       transform: rotate(180deg);
@@ -19,7 +21,6 @@
       filter: initial;
     }
   }
-  margin-top: 200px;
   h1 {
     margin-bottom: 80px;
   }
@@ -81,7 +82,7 @@
 
 @media (max-width: 767px) {
   #advantages {
-    margin-top: 100px;
+    padding-top: 100px;
     .btn {
       display: flex;
       justify-content: center;
