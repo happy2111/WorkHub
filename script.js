@@ -30,14 +30,14 @@ const body = document.body
 
 link_closer.forEach((i) => {
   i.addEventListener("click", () => {
-    offcanvas.classList.remove("show")
+    // offcanvas.classList.remove("show")
     // offcanvas.setAttribute("data-bs-backdrop", "false");
   });
 });
 
-if (offcanvas.classList.contains("show")) {
-  body.classList.toggle("active")
-}else {
-  body.classList.toggle("active");
-  body.style.padding = "0px !important";
-}
+// if (offcanvas.classList.contains("show")) {
+//   body.classList.toggle("active")
+// }else {
+//   body.classList.toggle("active");
+//   body.style.padding = "0px !important";
+// }
