@@ -31,6 +31,7 @@
     border-bottom: 2px solid var(--white);
   }
   button {
+    color: var(--black);
     border-radius: 24px;
     height: 40px;
     background-color: var(--white);
