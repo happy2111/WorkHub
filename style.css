@@ -8,6 +8,7 @@
   --shiny-pink: #FCBEDC;
   --prime: #b9f04c;
   --almost-orange: #FBC899;
+  --grey: #323232;
 }
 *, p {
   /* border: 1px solid red; */
@@ -27,6 +28,7 @@ body.active {
 
 .container {
   max-width: 1312px;
+  margin: 0 auto;
 }
 .btn {
    font-weight: 600;

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+    Discover the perfect coworking space for productivity and collaboration. Enjoy high-speed internet, modern amenities, and flexible plans designed to suit freelancers, startups, and remote teams. Book your spot today!"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <title>WorkHub</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light sticky-top">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="#">WorkHub</a>
+        <button
+          style="
+            border: none;
+            background-color: var(--black);
+            border-radius: 17px;
+          "
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#fff"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <ul
+          style="flex-direction: row; gap: 3rem"
+          class="main__nav__list navbar-nav justify-content-center flex-grow-1 pe-3"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html"
+              >Asosiy sahifa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="./index.html#advantages"
+              >Afzalliklarimiz</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html#about"
+              >Biz haqimizda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Narxlar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html#faqs"
+              >FAQ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html#cta"
+              >Aloqa</a
+            >
+          </li>
+        </ul>
+        <button class="navbar__logIn"><a href="#">Log In</a></button>
+        <button class="navbar__signUp"><a href="#">Sign Up</a></button>
+        <div
+          style="height: 100vh; width: 80%"
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+          data-bs-backdrop="true"
+          data-bs-scroll="false"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              WorkHub
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Asosiy sahifa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./index.html#advantages"
+                  >Afzalliklarimiz</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./index.html#about"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Narxlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html#faqs"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html#cta"
+                  >Aloqa</a
+                >
+              </li>
+              <div
+                style="
+                  display: flex;
+                  justify-content: end;
+                  margin: calc(100% - 100px) 0 0 0;
+                "
+              >
+                <button class="navbar__logIn2"><a href="#">Log In</a></button>
+                <button class="navbar__signUp2"><a href="#">Sign Up</a></button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="plans">
+      <div class="container">
+        <h1 class="title">Narxlar va Rejalar</h1>
+
+        <div class="plans__wrapper">
+          <div class="plans__card">
+            <h4>Basic</h4>
+            <span>
+              <h1>40,000 so’m</h1>
+              <h3>/kun</h3>
+            </span>
+
+            <ul>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Ofis joyi.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>24/7 kirish.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Tez Internet</p>
+              </li>
+            </ul>
+            <a class="plan__btn" href="login.html">Xarid Qilish</a>
+          </div>
+          <div class="plans__card pro">
+            <h4>Pro</h4>
+            <span>
+              <h1>899,000 so’m</h1>
+              <h3>/oy</h3>
+            </span>
+
+            <ul>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Ofis joyi.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>24/7 kirish.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Tez Internet</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Yig‘ilish xonalari.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Bepul ichimliklar.</p>
+              </li>
+            </ul>
+            <a class="plan__btn" href="login.html">Obuna Bo‘lish</a>
+          </div>
+          <div class="plans__card">
+            <h4>Premium</h4>
+            <span>
+              <h1>9,999,000 so’m</h1>
+              <h3>/yil</h3>
+            </span>
+
+            <ul>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Ofis joyi.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>24/7 kirish.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Tez Internet</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Yig‘ilish xonalari.</p>
+              </li>
+              <li>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476611 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3165 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C22 8.08262 20.8411 5.28472 18.7782 3.22182C16.7153 1.15892 13.9174 0 11 0ZM9.42857 15.3921L5.5 11.4636L6.74929 10.2143L9.42857 12.8936L15.2507 7.07143L16.5047 8.31757L9.42857 15.3921Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Bepul ichimliklar.</p>
+              </li>
+            </ul>
+            <a class="plan__btn" href="./login.html">Obuna Bo‘lish</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="f1">
+          <a href="#">WorkHub</a>
+          <p>
+            Join our newsletter to stay up to date on features and releases.
+          </p>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Elektron pochtangizni kiriting"
+              name="email"
+            />
+            <button type="submit" class="">Obuna boʻling</button>
+          </form>
+          <p>
+            By subscribing you agree to with our Privacy Policy and provide
+            consent to receive updates from our company.
+          </p>
+        </div>
+        <div class="f2">
+          <ul>
+            <li class="footer_title"><p href="">Explore More</p></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Events</a></li>
+          </ul>
+        </div>
+        <div class="f3">
+          <ul>
+            <li class="footer_title"><p href="">Stay Connected</p></li>
+            <li><a href="">Subscribe</a></li>
+            <li><a href="">Member Stories</a></li>
+            <li><a href="">Locations</a></li>
+            <li><a href="">Write for Us</a></li>
+          </ul>
+        </div>
+        <div class="f4">
+          <ul>
+            <li class="footer_title"><p href="">Follow Us</p></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">X</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
