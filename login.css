@@ -1,5 +1,5 @@
 #login {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
